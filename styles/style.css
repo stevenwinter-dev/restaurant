@@ -1,0 +1,470 @@
+body, html {
+    height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Passion One', cursive;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link-container {
+    justify-content: center;
+}
+
+.preheader-link-container {
+    justify-content: flex-end;
+    background-color: #E3DDD1;
+    margin: 0;
+    padding: 5px;
+}
+
+.preheader-link-container a {
+    color: #2d2a2a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-link-container {
+    justify-content: flex-end;
+    text-align: center;
+    height: 101px;
+}
+
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D2A2A;
+}
+
+.nav-container img {
+    width: 140px;
+    margin: 10px 0 10px 15px;
+}
+
+.nav-container a {
+    color: #fff;
+    
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.nav-link-container a {
+    padding: 33px 0px; 
+}
+
+.nav-link-container a:hover {
+    color: #ffc107;
+    transition: color .2s ease-in-out;
+}
+
+.nav-container li{
+    padding-left: 15px;
+}
+
+/* .icon {
+    margin-left: -2px;
+    border-left: 2px solid #fff;
+    width: 100%;
+    padding: 15px; 
+} */
+
+.icon {
+    margin-right: 15px;
+    align-self: center; ???
+}
+ .icon p {
+    margin-bottom: 0;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.icon i {
+    font-size: 24px;
+} 
+/* Hero Image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero.jpg");
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero.jpg");
+    /* Set a specific height */
+    height: 70vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    color: white;
+    align-self: center;
+  }
+
+.hero-text h1 {
+    text-transform: uppercase; 
+    font-size: 3.5rem;   
+    margin: 0;
+    /* padding-left: 60px;
+    padding-right: 60px; */
+    /* padding-left: 15%;
+    padding-right: 15%; */
+    max-width: 700px;  
+}
+
+.hero-text h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Form */
+
+.input-container {
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+input {
+    z-index: -1;
+    padding: 7px 0px;
+    width: 240px;
+    border: none;
+    margin-left: 50px;
+    margin-right: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: .75rem;
+}
+
+input::placeholder {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.fa-map-marker {
+    color: rgba(128, 128, 128, 0.6);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.hero-text button {
+    background-color: #2d2a2a;
+    border: 0;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #131111;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn-box {
+    padding: 10px 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.box-containerAB {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.boxA, .boxB, .boxC, .boxD {
+    flex: 1;
+    text-align: center;
+    padding: 35px;
+    color: white;
+    text-transform: uppercase;
+    background-position: center; 
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 65px 0;
+}
+
+.boxA p, .boxB p {
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.boxA h2, .boxB h2 {
+    font-size: 2.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 34px;
+}
+
+.boxA {
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url("../images/foodb.jpg");
+    filter: grayscale(100%);
+    background-size: 80em;
+    margin-right: 5px;
+}
+
+.boxB {
+    background-image: linear-gradient(to bottom right, rgba(173, 83, 137, 0.5), rgba(60, 16, 83, 0.5)), url("../images/drinks1.jpg");
+    background-size: 70em;
+    margin-left: 5px;
+}
+
+.box-containerAB button, .box-containerCD button{
+    background-color: #2d2a2a;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.box1{
+    background-image: url(../images/glasses.jpg);
+    margin-bottom: 10px;
+    width: 100%;
+    height: 87vh;
+    background-position: center; 
+    background-size: 1280px 960px;
+    background-repeat: no-repeat;
+}
+.box2{
+    background-image: url(../images/bg.jpg);
+    height: 40vh;
+    margin-bottom: 10px;
+    background-position: center; 
+}
+.box3{
+    background-image: url(../images/bg.jpg);
+    background-position: center; 
+    height: calc(40vh + 10px);
+}
+.box4{
+    background-image: url(../images/food1.jpg);
+    width: 100%;
+    height: 71.67vh;
+    background-position: center; 
+    background-size: 1280px 960px;
+    background-repeat: no-repeat;
+}
+
+.box5{
+    margin-top: 10px;
+    background-color: #2D2A2A;
+    height: 15.33vh
+}
+
+.box-flex {
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+  height: auto;
+}
+
+.box-flex2 {
+    flex: 1.4;
+    margin-left: 10px;
+}
+
+.box-container {
+    flex-direction: row;
+}
+
+.flex-four-icon-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #2d2a2a;
+}
+
+.four-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.four-icon-container img {
+    width: 16%;
+    margin: 0 12px;
+}
+
+.boxC {
+    background-image: url("../images/waiter.jpg");
+    background-size: 70em;
+    margin-right: 5px;
+}
+
+.boxD {
+    background-image: url("../images/bg.jpg");
+    background-size: 80em;
+    margin-right: 5px;
+}
+
+.boxC, .boxD {
+    flex: 1;
+    text-align: center;
+    padding: 35px;
+    color: white;
+    text-transform: uppercase;
+    height: 60vh;   
+}
+
+.boxC {
+    margin-right: 5px;
+}
+
+.boxD {
+    margin-left: 5px;
+}
+
+.box-containerCD {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #2d2a2a;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1100px;
+}
+
+.footer-flex {
+    justify-content: space-between;    
+}
+
+.footer-links{
+    line-height: 24px;
+}
+
+.footer-flex-box1 {
+    flex: 1;
+}
+
+.footer-flex-box1 img {
+    width: 300px;
+}
+
+.footer-flex-box2 {
+    flex: 1;
+    color: white;
+}
+
+.footer-flex-box2 i {
+    color: #ffc107;
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.footer-flex h3 {
+    font-size: 1rem;
+    flex
+}
+
+.footer-links a, .footer-nav-links a{
+    color: #fff;
+}
+
+.footer-nav-links {
+    justify-content: start;
+
+}
+
+.footer-nav-links a {
+    border-right: #fff solid 1px;
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-nav-links a:nth-last-child() {
+    border-right: none;??????????????
+}
+
+.copyright, .copyright-link {
+    color: #999;
+    font-size: .8rem;
+}
+
+.burger {
+    margin-right: 25px;
+    font-size: 2rem;
+    height: 100%;
+    color: #ffc107;
+}
+
+@media (min-width: 976px) {
+    .burger {
+        display: none; 
+    }
+}
+
+@media (max-width: 975px) {
+    .icon-link-container, .nav-link-container {
+        display: none;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .box-container{
+        flex-direction: column;
+    }  
+    .box-containerAB {
+        flex-direction: column;
+    } 
+    .boxA {
+        margin-bottom: 10px;
+    }
+    .boxB {
+        margin-left: 0;
+    } 
+    .box-flex2{
+        margin-left: 0;
+    }  
+    .box3 {
+        margin-bottom: 10px;
+    }
+    .box-containerCD {
+        flex-direction: column;
+        height: 50%;
+    }
+    .boxC {
+        margin-bottom: 10px;
+    }
+    .boxD {
+        margin-left: 0;
+    }
+}
