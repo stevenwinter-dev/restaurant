@@ -425,6 +425,10 @@ footer {
     color: #ffc107;
 }
 
+.boxD p {
+    font-family: 'Caveat', cursive;   
+}
+
 @media (min-width: 976px) {
     .burger {
         display: none; 
@@ -447,6 +451,8 @@ footer {
     } 
     .boxA {
         margin-bottom: 10px;
+        height: 22vh;
+        margin-right: 0px;
     }
     .boxB {
         margin-left: 0;
@@ -466,5 +472,50 @@ footer {
     }
     .boxD {
         margin-left: 0;
+    }
+    .boxA, .boxB, .boxC, .boxD {
+        padding: 0;
+        height: 22vh;
+    }
+    input, .input-container button, .fa-map-marker, form {
+        display: none;
+    }
+    .hero-image {
+        height: 22vh;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+    .hero-text h2 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+    .boxA h2, .boxB h2 {
+        font-size: 2rem;
+    }
+    .boxA p, .boxB p {
+        font-size: 1.5rem;
+    }
+    .btn-box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .box1 {
+        display: none;
+    }
+    .box4 {
+        height: 22vh;
+    }
+    .box-containerCD {
+        margin-top: 0;
+    }
+    .boxD {
+        margin-right: 0;
+    }
+    .box3, .box2 {
+        height: 22vh;
     }
 }
